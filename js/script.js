@@ -53,6 +53,7 @@ function encriptar(texto) {
   });
 
   btnLimpiar.addEventListener("click", () => {
-    // Limpiar el campo de salida
+    // Limpiar el campo de entrada y salida
     outputTexto.value = "";
+    inputTexto.value = "";
   });
