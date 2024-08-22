@@ -1,0 +1,132 @@
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #f3f5fc;
+  }
+  
+  header {
+    padding: 20px;
+    text-align: left;
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 80px);
+  }
+  
+  /* Estilos de la sección de entrada */
+  .input-section {
+    flex-basis: 60%;
+    padding: 20px;
+  }
+  
+  #input-texto {
+    width: 100%;
+    height: 400px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #f3f5fc;
+    resize: none;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .buttons button {
+    flex-basis: 48%;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 24px;
+    background-color: #00caa9;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  /* Estilos de la sección de salida */
+  .output-section {
+    flex-basis: 35%;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  #output-texto {
+    width: 100%;
+    height: 400px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #fff;
+    resize: none;
+  }
+  
+  .output-section button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 24px;
+    background-color: #d8dfe8;
+    color: #00caa9;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .output-section button img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
+
+  .output-section .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .output-section .buttons button {
+    flex-basis: 48%;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 24px;
+    background-color: #d8dfe8;
+    color: #00caa9;
+    cursor: pointer;
+  }
+  
+  /* Diseño responsivo */
+  @media (max-width: 768px) {
+    main {
+      flex-direction: column;
+      height: auto;
+      padding: 20px;
+    }
+  
+    .input-section,
+    .output-section {
+      flex-basis: auto;
+      width: 100%;
+    }
+  
+    #input-texto,
+    #output-texto {
+      height: 251px;
+    }
+  }

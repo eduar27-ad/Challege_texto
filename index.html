@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alura Challenge - Encriptador</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Encabezado con el logo de Alura -->
+  <header>
+    <img src="assets/logo.png" alt="Logo de Alura">
+  </header>
+
+  <main>
+    <!-- Sección de entrada de texto -->
+    <section class="input-section">
+      <textarea id="input-texto" placeholder="Ingrese el texto aquí"></textarea>
+      <div class="buttons">
+        <button id="btn-encriptar">Encriptar</button>
+        <button id="btn-desencriptar">Desencriptar</button>
+      </div>
+    </section>
+
+    <!-- Sección de salida de texto -->
+    <section class="output-section">
+        <textarea id="output-texto" placeholder="Ningún mensaje fue encontrado" readonly></textarea>
+        <div class="buttons">
+          <button id="btn-copiar">
+            <img src="assets/icon-copy.png" alt="Icono de Copiar">
+            Copiar
+          </button>
+          <button id="btn-limpiar">Limpiar</button>
+        </div>
+      </section>
+  </main>
+
+  <!-- Incluir el script JavaScript -->
+  <script src="js/script.js"></script>
+</body>
+</html>
